@@ -27,7 +27,7 @@ h1 {
     STYLE ALL SQUARES:
 ----------------------------------------*/
 .container .squares:nth-child(-n+4) {
-    background-image: url("../Images/Icons/face1.png");
+    background-image: url("../Images/face1.png");
     color:#fff;
     float: left;
     width: 100px;
@@ -92,7 +92,7 @@ h1 {
     HOVER, TRANSLATE, & TRANSFORM EFFECTS:
 ----------------------------------------------*/
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../Images/Icons/face2.png");
+    background-image: url("../Images/face2.png");
     transform: scale(0.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -138,7 +138,7 @@ DEFINE THE ANIMATION EFFECTS:
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image: url("../Images/Icons/face2.png");
+        background-image: url("../Images/face2.png");
     }
     50% {
         transform: translateY(330px);
