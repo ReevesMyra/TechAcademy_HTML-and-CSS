@@ -217,7 +217,8 @@ button {
 
 #exterior ul {
     color: rgb(9, 9, 120);
-    font-size: 16pt;
+    font-size: 15pt;
+    list-style: none;
 }
 
 
