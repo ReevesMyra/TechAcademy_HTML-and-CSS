@@ -169,8 +169,12 @@ main {
 
 #purposeSection {
     margin-bottom: 15px;
+    border: none;
 }
 
+#customerInfo {
+    border: none;
+}
 
 #customerInfo input {
     margin: 5px;
@@ -184,6 +188,7 @@ main {
 
 #commentSection {
     margin-top: 15px;
+    border: none;
 }
 
 
@@ -196,7 +201,11 @@ button {
     cursor: pointer;
 }
 
-
+button:hover {
+    color: #e7feff;
+    background-color: black;
+    border: solid #e7feff 2px;
+}
 
 
 
