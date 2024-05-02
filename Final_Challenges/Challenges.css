@@ -9,3 +9,13 @@
     filter: drop-shadow(8px 8px 10px gray);
     border-radius: 25px;
 }
+
+footer {
+    margin: 25px;
+    background-color: rgb(94, 50, 33);
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+    line-height: 0.5em;
+    padding: 1px;
+}
