@@ -119,6 +119,7 @@ nav a:hover {
     width: 40%;
     padding: 10px;
     margin-left: 60px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -149,3 +150,36 @@ nav a:hover {
     background-color: pink;
     color: black;
 }
+
+
+
+/* Challenge 8 */
+#Eight {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transition: 2s ease;
+    background-color: black;
+}
+
+#Eight:hover .overlay{
+    opacity: 1;
+}
+
+.overlay p {
+    color: antiquewhite;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%
+}
+
