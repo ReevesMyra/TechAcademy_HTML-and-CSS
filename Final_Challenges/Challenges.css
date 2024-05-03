@@ -11,7 +11,21 @@
 }
 
 
+/* Challenge 2 */
 
+footer {
+    margin: 25px;
+    background-color: rgb(94, 50, 33);
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+    line-height: 0.5em;
+    padding: 1px;
+}
+
+
+
+/* Challenge 3 */
 
 table {
     margin: 30px;
@@ -45,13 +59,27 @@ td {
 }
 
 
+/* Challenge 4 */
 
-footer {
-    margin: 25px;
-    background-color: rgb(94, 50, 33);
-    color: antiquewhite;
-    text-align: center;
+#Challenge4 {
+    position: relative;
+    color:antiquewhite;
+}
+
+#Challenge4 img{
+    width: 50%;
+    border: dotted 7px pink;
+}
+
+#ImageCredit{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    color:black;
+    text-shadow: antiquewhite 5px 5px 6px;
+    font-size: 28pt;
     font-weight: bold;
-    line-height: 0.5em;
-    padding: 1px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 90px;
 }
