@@ -110,3 +110,26 @@ nav a:hover {
     background-color: antiquewhite;
     color: darkred;
 }
+
+
+
+/* Challenge 6 */
+.column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    margin: 100px 60px;
+    text-align: center;
+}
+
+.column p {
+    font-style: italic;
+    font-size: larger;
+}
+
+/* Clear the float effect afterthe columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
