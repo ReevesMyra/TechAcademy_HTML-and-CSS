@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js"></script>
 </head>
 <body>
     <header>
@@ -42,51 +43,51 @@
 
                 <div id="gallery-row1">
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment01_thumb.jpg" alt="Dining area">
+                        <img src="Images/Thumbnails/apartment01_thumb.jpg" onclick="openModal();currentSlide(1)" alt="Dining area">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment02_thumb.jpg" alt="Living room area">
+                        <img src="Images/Thumbnails/apartment02_thumb.jpg" onclick="openModal();currentSlide(2)" alt="Living room area">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment11_thumb.jpg" alt="Porch viewed from inside">
+                        <img src="Images/Thumbnails/apartment11_thumb.jpg" onclick="openModal();currentSlide(3)" alt="Porch viewed from inside">
                     </div>
                 </div>
 
 
                 <div id="gallery-row2">
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment06_thumb.jpg" alt="Bathroom">
+                        <img src="Images/Thumbnails/apartment06_thumb.jpg"  onclick="openModal();currentSlide(4)" alt="Bathroom">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment07_thumb.jpg" alt="Bedroom #1">
+                        <img src="Images/Thumbnails/apartment07_thumb.jpg"  onclick="openModal();currentSlide(5)" alt="Bedroom #1">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment08_thumb.jpg" alt="Bedroom #2">
+                        <img src="Images/Thumbnails/apartment08_thumb.jpg" onclick="openModal();currentSlide(6)" alt="Bedroom #2">
                     </div>
                 </div>
 
 
                 <div id="gallery-row3">
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment03_thumb.jpg" alt="Porch photographed from outside on it with view of ocean in background">
+                        <img src="Images/Thumbnails/apartment03_thumb.jpg" onclick="openModal();currentSlide(7)" alt="Porch photographed from outside on it with view of ocean in background">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment09_thumb.jpg" alt="Kitchen">
+                        <img src="Images/Thumbnails/apartment09_thumb.jpg" onclick="openModal();currentSlide(8)" alt="Kitchen">
                     </div>
 
 
                     <div class="gallery-photo">
-                        <img src="Images/Thumbnails/apartment12_thumb.jpg" alt="Communal bar">
+                        <img src="Images/Thumbnails/apartment12_thumb.jpg" onclick="openModal();currentSlide(9)" alt="Communal bar">
                     </div>
                 </div>
 
@@ -107,6 +108,132 @@
                     </div>
                 </div>
 
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 of 12</div>
+                            <img src="Images/apartment1.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 of 12</div>
+                            <img src="Images/apartment2.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 of 12</div>
+                            <img src="Images/apartment3.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 of 12</div>
+                            <img src="Images/apartment4.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 of 12</div>
+                            <img src="Images/apartment5.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 of 12</div>
+                            <img src="Images/apartment6.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 of 12</div>
+                            <img src="Images/apartment7.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 of 12</div>
+                            <img src="Images/apartment8.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">9 of 12</div>
+                            <img src="Images/apartment9.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">10 of 12</div>
+                            <img src="Images/apartment10.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">11 of 12</div>
+                            <img src="Images/apartment11.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">12 of 12</div>
+                            <img src="Images/apartment12.jpg" class="arrow cursor" style="width:100%">
+                        </div>
+
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment1.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(1)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment2.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment3.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment4.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(4)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment5.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(5)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment6.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(6)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment7.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(7)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment8.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(8)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment9.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(9)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment10.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(10)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment11.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(11)" alt="">
+                        </div>
+
+                        <div class="gallery-photo">
+                            <img src="Images/apartment12.jpg" class="arrow cursor" style="width:100%" onclick="currentSlide(12)" alt="">
+                        </div>
+
+                        
+                    </div>
+                </div>
 
             </div>
         </section>
